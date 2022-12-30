@@ -1,0 +1,1 @@
+import{_ as t,o,c,a as e}from"./index-0d261c59.js";const s={},_={class:"about"},n=e("div",null,[e("h3",null,"這裏是一個整理跨年資訊的站點。"),e("br"),e("p",null,"本質上是我在 2021 年底製作的 Scratch 項目「嗨跨年！」使用 Vue.js 的重置版，旨在讓用戶在跨年時能快速找到自己想看的節目。"),e("br"),e("footer",null,"(c) 2022 BobYang.")],-1),a=[n];function r(l,u){return o(),c("div",_,a)}const d=t(s,[["render",r]]);export{d as default};
