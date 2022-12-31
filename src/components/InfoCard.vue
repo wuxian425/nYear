@@ -4,22 +4,27 @@
       type: String,
       required: true
     },
-    content: {
+    hosts: {
       type: String,
-      required: true
+      default: "未知"
+    },
+    cases: {
+      type: String,
+      default: "未知"
     },
     live: {
       type: String,
-      required: true
+      default: "#未知"
     }
-  })
+  });
 </script>
 
 <template>
   <div class="card">
     <h1 class="t-color">{{ title }}</h1>
-    <p>{{ content }}</p>
-    <a v-bind:href="live">前往直播</a>
+    <p>主持人：{{ hosts }}</p>
+    <p>跨年卡司：{{ cases }}</p>
+    <a v-bind:href="live" target="_blank">前往直播</a>
   </div>
 </template>
 
@@ -31,7 +36,24 @@
 }
 
 h1 {
+  display: inline-block;
   font-size: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+h1:after {
+  background-color: #AA334420;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #AA334420;
+  content: '';
+  position: absolute;
+  z-index: 1;
+
+  top: 60%;
+  bottom: 2px;
+  left: 10px;
+  right: -10px;
 }
 
 p {
@@ -48,5 +70,9 @@ a {
 
 a:hover {
   padding: 2px 12px;
+}
+
+a:after {
+  background-color: transparent;
 }
 </style>

@@ -15,9 +15,26 @@ a,
   transition: 0.4s;
 }
 
+a:after {
+  background-color: #CC334422;
+  box-shadow: 0 0 8px #CC334422;
+  content: '';
+  position: absolute;
+  transition: 0.4s cubic-bezier(0, 0.6, 0.1, 1);
+  z-index: 1;
+
+  top: 95%;
+  bottom: 0;
+  left: 40%;
+  right: 40%;
+}
+
 @media (hover: hover) {
-  a:hover {
-    background-color: #CC334422;
+  a:hover:after {
+    top: 95%;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
   }
 }
 

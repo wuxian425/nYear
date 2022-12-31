@@ -10,8 +10,9 @@ import Header from './components/Header.vue'
 
       <nav>
         <RouterLink to="/">倒計時</RouterLink>
-        <RouterLink to="/live">節目直播</RouterLink>
+        <RouterLink to="/lives">2023 跨年直播</RouterLink>
         <RouterLink to="/about">關於</RouterLink>
+
       </nav>
     </div>
   </header>
@@ -27,7 +28,7 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin-top: 2rem;
 }

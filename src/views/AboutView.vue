@@ -7,7 +7,7 @@
       <p>本質上是我在 2021 年底製作的 Scratch 項目「嗨跨年！」使用 Vue.js 的重置版，旨在讓用戶在跨年時能快速找到自己想看的節目。</p>
       <br>
       
-      <footer>(c) 2022 BobYang.</footer>
+      <footer>(c) 2022 BobYang. 本項目在 <a href="https://github.com/wuxian425/nYear">Github</a> 上開放源始碼。</footer>
     </div>
   </div>
 </template>
